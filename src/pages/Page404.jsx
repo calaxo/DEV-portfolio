@@ -1,6 +1,6 @@
 
 import '@styles/page404.css'
-
+import perdu from '@assets/perdu.jpg'
 const Page404 = () => {
   return (
     <div className="container">
@@ -8,7 +8,8 @@ const Page404 = () => {
       <p className="error-message">Page introuvable</p>
       <p className="error-message">Désolé, la page que vous recherchez n'existe pas.</p>
       <img
-        src="https://example.com/path/to/your/custom/image.png"
+        className="error-img"
+        src={perdu}
         alt="Page introuvable"
         width="300"
       />

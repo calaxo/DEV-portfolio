@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Acceuil() {
+function Front() {
   return (
     <div>
-      <h1>Acceuil</h1>
+      <h1>Page Front</h1>
       <p>Ceci est une page React simple.</p>
     </div>
   );
 }
 
-export default Acceuil;
+export default Front;

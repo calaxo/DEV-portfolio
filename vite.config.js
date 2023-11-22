@@ -5,6 +5,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: 'https://dev.axel-cal.fr/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -18,18 +19,25 @@ export default defineConfig({
   build: {
     sourcemap: false,
     rollupOptions: {
-        output: {
-            dir: 'builded/',
-            entryFileNames: 'plugin.js',
-            assetFileNames: 'plugin.css',
-            chunkFileNames: "chunk.js",
-            manualChunks: {
-              vendor: ['react', 'react-router-dom', 'react-dom'],
+      output: {
+          dir: 'builded/',
+          entryFileNames: 'plugin.js',
 
-            },
-        },
-    },
-    target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari12'],
+          assetFileNames: (assetInfo) => {
+            let extType = assetInfo.name.split('.').at(1);
+            if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+              extType = 'img';
+            }
+            return `[name][extname]`;
+          },
+          chunkFileNames: "chunk.js",
+          manualChunks: {
+            vendor: ['react', 'react-router-dom', 'react-dom'],
+
+          },
+      },
+  },
+  target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari12'],
 }
 
 
