@@ -1,10 +1,9 @@
 import React from "react";
-
+import  Dessin  from "@components/Dessin";
 function Front() {
   return (
     <div>
-      <h1>Page Front</h1>
-      <p>Ceci est une page React simple.</p>
+      <Dessin></Dessin>
     </div>
   );
 }
