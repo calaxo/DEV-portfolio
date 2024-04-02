@@ -1,8 +1,5 @@
 import { createRoot } from "react-dom/client";
-import "@styles/index.css";
-import "@styles/accueil.css";
-import "@styles/back.css";
-import "@styles/front.css";
+import "@/styles.css";
 
 import Page404 from "@pages/Page404";
 import { useState } from "react";
@@ -40,8 +37,8 @@ function App() {
 
   return (
     <Router>
-      <div className="header">
-        <NavLink to="/Accueil" className="logo">
+      <div className="">
+        <NavLink to="/Accueil" className="width-4">
           <div className="titre">Mon Portfolio</div>
         </NavLink>
         <div className="header-right">
@@ -61,7 +58,7 @@ function App() {
             ))}
           </div>
           <div className="burger-button" onClick={toggleHamburger}>
-            <a className="burger-button_menu">menu</a>
+            <a className="text-3xl font-bold ">menu</a>
             <div
               className="burger-button__line line1"
               style={

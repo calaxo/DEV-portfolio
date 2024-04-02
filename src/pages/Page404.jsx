@@ -1,4 +1,4 @@
-import "@styles/page404.css";
+
 import perdu from "@assets/perdu.jpg";
 const Page404 = () => {
   return (
