@@ -1,9 +1,31 @@
-const modules = import.meta.glob('./pages/*.jsx',{import : 'name'});
+import { createRoot } from 'react-dom/client';
+import React, { Fragment, lazy, Suspense } from 'react'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import '@/styles.css';
 
-console.log(modules);
+import Header from "@components/header";
+import Footer from "@components/footer";
 
-Object.entries(modules).forEach(([path, module]) => {
-  module().then((name) => {
-    console.log(name.default);
-  });
-});
+
+
+import routes from '~react-pages';
+
+console.log(routes);
+
+
+const router = createBrowserRouter(routes);
+
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(
+  <React.StrictMode>
+    {/* <App /> */}
+    <Header />
+    <RouterProvider router={router}/>
+    <Footer />
+  </React.StrictMode>
+
+
+);
+
+
