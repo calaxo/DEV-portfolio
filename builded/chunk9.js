@@ -1,1 +1,1 @@
-import{j as d}from"./chunk.js";const r=()=>d.jsxs("div",{children:[d.jsx("h1",{children:"404"}),d.jsx("p",{children:"Page not found"}),"fzefzefzefzefdddddddddddddddddddddddddddddddd"]});export{r as default};
+import{a as e,j as d}from"./plugin.js";import"./chunk.js";const o=()=>e("div",{children:[d("h1",{children:"404"}),d("p",{children:"Page not found"}),"fzefzefzefzefdddddddddddddddddddddddddddddddd"]});export{o as default};
