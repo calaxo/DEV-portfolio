@@ -10,7 +10,7 @@ import { splitVendorChunkPlugin } from 'vite';
 // https://vitejs.dev/config/
 export default defineConfig({
   // base: 'https://dev.axel-cal.fr/',
-  plugins: [react(),
+  plugins: [react({jsxRuntime: 'classic'}),
     Pages({
       dirs: 'src/pages',
       

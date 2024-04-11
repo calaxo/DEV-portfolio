@@ -1,1 +1,1 @@
-import{a as e,j as d}from"./plugin.js";import"./chunk.js";const o=()=>e("div",{children:[d("h1",{children:"404"}),d("p",{children:"Page not found"}),"fzefzefzefzefdddddddddddddddddddddddddddddddd"]});export{o as default};
+import{R as d}from"./chunk.js";const t=()=>d.createElement("div",null,d.createElement("h1",null,"404"),d.createElement("p",null,"Page not found"),"fzefzefzefzefdddddddddddddddddddddddddddddddd");export{t as default};

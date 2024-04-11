@@ -10,9 +10,9 @@ import Footer from "@components/footer";
 
 import routes from '~react-pages';
 
-console.log(routes);
 
 
+  
 const router = createBrowserRouter(routes);
 
 const container = document.getElementById('root');
@@ -20,8 +20,8 @@ const root = createRoot(container); // createRoot(container!) if you use TypeScr
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Header />
-    <RouterProvider router={router}/>
+          <Header />
+            <RouterProvider router={router}/>
     <Footer />
   </React.StrictMode>
 
