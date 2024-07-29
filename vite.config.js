@@ -2,25 +2,14 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path';
 import Pages from 'vite-plugin-pages';
-
-
-
-
 import { splitVendorChunkPlugin } from 'vite';
-// https://vitejs.dev/config/
+
 export default defineConfig({
-  // base: 'https://dev.axel-cal.fr/',
   plugins: [react({jsxRuntime: 'classic'}),
     Pages({
-      dirs: 'src/pages',
-      
-      
+      dirs: 'src/pages', 
 }
-
-
 )
-    
-  
   ],
   resolve: {
     alias: {
@@ -54,6 +43,5 @@ export default defineConfig({
   },
   target: ['es2020', 'edge88', 'firefox78', 'chrome87', 'safari12'],
 }
-
 
 })
