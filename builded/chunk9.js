@@ -1,1 +1,0 @@
-import{R as d}from"./chunk.js";const t=()=>d.createElement("div",null,d.createElement("h1",null,"404"),d.createElement("p",null,"Page not found"),"fzefzefzefzefdddddddddddddddddddddddddddddddd");export{t as default};
